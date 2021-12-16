@@ -14,7 +14,42 @@
     height: auto;
     }
 
+    .swiper-slide .swiper__card__descr {
+        padding: 5px 0 2px 5px;
+        min-height: 120px;
+        width: calc(80% - 5px);
+        background: white;
+    }
+
+    .swiper-slide .swiper__card__link{
+        text-decoration: none;
+        color: black;
+    }
+
+    .swiper-slide .descr__link {
+        text-decoration: none;
+        color: black;
+    }
+    .swiper-slide .descr__link:hover{
+        text-decoration: underline;
+    }
+
+    .swiper-slide .github__link {
+        margin-top: 5px;
+        color: #24292f;
+        font-size: 23px;
+    }
+
+    .swiper-slide .swiper__header{
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .swiper-slide .swiper__subheader span {
+        font-weight: bold;
+    }
+
     .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 80%;
     }

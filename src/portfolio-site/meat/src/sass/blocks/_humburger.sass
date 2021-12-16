@@ -1,0 +1,134 @@
+.humburger
+    display: none
+    position: absolute
+    right: 10px
+    top: 27px
+    transform: translateY(-50%)
+    width: 26px
+    height: 12px
+    z-index: 3
+    span
+        display: block
+        height: 2px
+        width: 100%
+        background-color: #fff
+        margin-bottom: 3px
+        transition: 0.5s all
+    &_active
+        span
+            margin-bottom: -2px
+            &:nth-last-child(1)
+                transform: translateY(3px) rotate(-50deg)
+            &:nth-last-child(2)
+                display: none
+            &:nth-last-child(3)
+                transform: translateY(3px) rotate(50deg)
+    //adaptation
+
+@media (max-width: 480px)
+    .humburger
+        display: block
+    header
+        .head
+            justify-content: space-between
+            align-items: center
+            .head__square
+                z-index: 33
+                margin: 0
+                padding: 0 !important
+                display: block
+                width: 50px
+                height: 57px
+                &_active
+                    position: fixed
+                    right: 12px
+                .toolbar
+                    position: fixed
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    text-align: center
+                    top: 0
+                    right: -100%
+                    width: 70%
+                    height: 100vh
+                    padding: 20px 15px
+                    background-color: rgba(0,0,0, .8)
+                    
+                    .link__toolbar
+                        text-align: center
+                    &_active
+                        z-index: 2
+                        right: 0
+                    .toolbar__item
+                        position: relative
+                        &:hover
+                            &::before
+                                width: 500% !important
+                                top: 0px
+                                height: 100%
+                                background-color: #e1b838    
+                            &:nth-last-child(5)::before
+                                left: -163%
+                            &:nth-last-child(4)::before
+                                left: -132px
+                            &:nth-last-child(3)::before
+                                left: -118px
+                            &:nth-last-child(2)::before
+                                left: -131px   
+                            &:nth-last-child(1)::before
+                                left: -120px
+
+@media (max-width: 425px)
+    header
+        .head
+            .head__square
+                .toolbar
+                    .toolbar__item
+                        &:hover
+                            &:nth-last-child(5)::before
+                                left: -139%
+                            &:nth-last-child(4)::before
+                                left: -111px
+                            &:nth-last-child(3)::before
+                                left: -95px
+                            &:nth-last-child(2)::before
+                                left: -108px
+                            &:nth-last-child(1)::before
+                                left: -97px
+
+@media (max-width: 375px)
+    header
+        .head
+            .head__square
+                .toolbar
+                    .toolbar__item
+                        &:hover
+                            &:nth-last-child(5)::before
+                                left: -117%
+                            &:nth-last-child(4)::before
+                                left: -93px
+                            &:nth-last-child(3)::before
+                                left: -78px
+                            &:nth-last-child(2)::before
+                                left: -91px
+                            &:nth-last-child(1)::before
+                                left: -79px
+
+@media (max-width: 320px)
+    header
+        .head
+            .head__square
+                .toolbar
+                    .toolbar__item
+                        &:hover
+                            &:nth-last-child(5)::before
+                                left: -93%
+                            &:nth-last-child(4)::before
+                                left: -74px
+                            &:nth-last-child(3)::before
+                                left: -59px
+                            &:nth-last-child(2)::before
+                                left: -72px
+                            &:nth-last-child(1)::before
+                                left: -61px

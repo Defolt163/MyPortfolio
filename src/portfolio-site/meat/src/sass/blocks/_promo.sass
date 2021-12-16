@@ -1,0 +1,39 @@
+.promo
+    height: 593px
+    background: url(../img/bg/bg1.png) center center/cover no-repeat
+    .caorusel
+        height: 593px
+        display: block
+        margin: 0 auto
+        .caorusel__inner
+            position: relative
+            margin: 0 auto
+        .main_img
+            display: block
+            margin: 0 auto
+            width: 96%
+        .desktop_img
+            display: none
+        .mobile_img
+            display: none
+        .slick-dots
+            padding: 0
+            position: absolute
+            list-style: none
+            display: flex
+            justify-content: space-between
+            width: 150px
+            right: 50%
+            transform: translateX(50%)
+            bottom: 64px
+            button
+                font-size: 0
+                background: #000 // цвет фона
+                border: solid 3px #e1b838 // без рамки
+                border-radius: 50% // радиус закругления
+                width: 26px
+                height: 26px
+                outline: none
+            .slick-active
+                button
+                    background: #e1b838 // цвет фона

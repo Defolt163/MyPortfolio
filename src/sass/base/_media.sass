@@ -1,12 +1,12 @@
 @media ( max-width: 1500px)
-    .home 
+    .home, .portfolio, .about
         .main 
             header 
                 .menu__logo__img
                     width: 70% !important
 
 @media ( max-width: 1300px)
-    .home 
+    .home, .portfolio, .about
         .main 
             header 
                 .menu__logo
@@ -16,19 +16,24 @@
                     align-items: flex-end
 
 @media ( max-width: 1155px)
-    .home 
+    .home, .portfolio, .about
         .main__bg 
             .element
                 font-size: 220px !important
+@media ( max-width: 1155px)
+    .portfolio
+        .slider__block
+            .swiper__header
+                font-size: 30px
 
 @media ( max-width: 991px)
-    .home 
+    .home, .portfolio, .about
         .main__bg 
             .element
                 font-size: 190px !important
 
 @media ( max-width: 915px)
-    .home 
+    .home, .portfolio, .about
         .main 
             header 
                 .menu__logo
@@ -51,9 +56,26 @@
                                 transform: rotate(0deg)
                                 .smm__link
                                     line-height: 2
+            .filling__block
+                padding-left: 20px
+                .element
+                    font-size: 38px !important
+        .slider__block
+            margin: 0 auto
+            .swiper
+                padding: 0
+                .swiper-slide 
+                    width: 80vw
+                    .swiper__card__link
+                        img
+                            margin: 0 auto
+                    .swiper__card__descr
+                        margin: 0 auto
+        .swiper-button-next, .swiper-button-prev
+            display: none
 
 @media ( max-width: 915px)
-    .home 
+    .home, .portfolio, .about
         .main 
             header 
                 .menu
@@ -71,16 +93,18 @@
                             padding: 20px 15px
                             background-color: rgba(0,0,0, .8)
                             transition: 0.6s all
+                            z-index: 88
+                            .menu__item
+                                height: 60px
+                                display: flex
+                                flex-direction: row-reverse
+                                align-items: center
                             .menu_link
                                 text-align: center
                             &_active
                                 z-index: 2
                                 right: 0
                                 .menu__item
-                                    height: 60px
-                                    display: flex
-                                    flex-direction: row-reverse
-                                    align-items: center
                                     &:hover
                                         .subline
                                             margin: 0 10px 0 0
@@ -98,7 +122,7 @@
                             transform: translateY(-50%)
                             width: 40px
                             height: 12px
-                            z-index: 3
+                            z-index: 89
                             span
                                 display: block
                                 border-radius: 5px
@@ -118,40 +142,121 @@
                                         transform: translateY(3px) rotate(50deg)
             .smm__block
                 z-index: 999
+        .main
+            .filling__block
+                &__wrapper
+                    .element
+                        display: block !important
+            .menu__logo
+                display: none !important
+            .page__fill
+                padding-left: 10px
+
+@media ( max-width: 888px)
+    .home, .portfolio, .about
+        .main 
+            .page__fill
+                .question
+                    .name
+                        font-size: 55px !important
 
 @media ( max-width: 709px)
-    .home 
+    .home, .portfolio, .about
         .main 
             header 
                 .menu__logo
                     display: none
+            .page__fill
+                .question
+                    .name
+                        font-size: 55px !important
 
 @media ( max-width: 649px)
-    .home 
+    .home, .portfolio, .about
         .main__bg 
             .element
                 font-size: 160px !important
 
 @media ( max-width: 550px)
-    .home 
+    .home, .portfolio, .about
         .main__bg 
             .element
                 font-size: 140px !important
 
+@media ( max-width: 494px)
+    .about
+        .main
+            .page__fill
+                .question
+                    .name
+                        font-size: 34px !important
+                    .data__item-2, .data__item-1, .data__item-3
+                        font-size: 17px !important
+                    
+
 @media ( max-width: 484px)
-    .home 
+    .home, .portfolio, .about
         .main__bg 
             .element
                 font-size: 120px !important
+        .slider__block 
+            .swiper 
+                .swiper-slide 
+                    width: 100vw
+                    .swiper__card__descr
+                        width: calc(90% - 5px)
+                    .swiper__card__link 
+                        img
+                            width: 100%
+        .swiper-hint_block
+            display: flex !important
+
+@media ( max-width: 427px)
+    .about
+        .main
+            .page__fill
+                .question
+                    .name
+                        font-size: 34px !important
+                    .data__item-2, .data__item-1, .data__item-3
+                        font-size: 15px !important
 
 @media ( max-width: 414px)
-    .home 
+    .home, .portfolio, .about
         .main__bg 
             .element
                 font-size: 100px !important
-
+        .slider__block 
+            height: 75vh
+            display: flex
+            align-items: center
 @media ( max-width: 340px)
-    .home 
+    .home, .portfolio, .about
         .main__bg 
             .element
                 font-size: 89px !important
+
+
+/** landscape **/
+
+@media ( max-width: 915px) and (orientation: landscape)
+    .home, .portfolio, .about
+        .slider__block
+            margin: 0 auto
+            .swiper
+                padding: 0
+                .swiper-slide 
+                    display: flex
+                    width: 60vw
+                    .swiper__card__link
+                        img
+                            width: 100%
+                            margin: 0 auto
+                    .swiper__card__descr
+                        background: none
+                        position: absolute
+                        margin: 0 auto
+                        .swiper__header
+                            color: white
+                        .swiper__subheader
+                            color: white

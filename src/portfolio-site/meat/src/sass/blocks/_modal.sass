@@ -1,0 +1,87 @@
+.feed-form
+    z-index: 1
+    margin-top: 36px
+    display: flex
+    flex-direction: column
+    width: 400px
+    input
+        height: 79px
+        border-radius: 5px
+        border: solid 2px #e1b838 !important
+        margin-bottom: 15px
+        border: none
+        padding: 0 20px
+        font-size: 14px
+        font-weight: 300
+        color: #4b4b4b
+        &:nth-last-child(2)
+            margin-bottom: 20px
+    .form__name
+        font-size: 29.5px
+        font-weight: normal
+        color: #e1b838
+
+.overlay
+    z-index: 99999
+    display: none
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0, .56)
+    .modal
+        overflow: hidden
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background: url(../img/bg/bg3.png) center center/cover no-repeat
+        width: 50%
+        height: 500px
+        padding: 38px 40px 40px 40px
+        &__close
+            position: absolute
+            line-height: 56px
+            position: absolute
+            top: -13px
+            right: 0
+            font-size: 56px
+            color: #ddd
+            cursor: pointer
+        &__wrapper
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            position: relative
+            .feed_img
+                overflow: hidden
+                width: 100%
+                height: auto
+                position: absolute
+                left: -40%
+                top: -9px
+            .modal__subtitle
+                z-index: 1
+                font-size: 46.5px
+                font-weight: bold
+                color: #e1b838
+        &_mini
+            width: 30%
+            background: rgba(0, 0, 0, 0.5)
+            backdrop-filter: blur(4px)
+            height: auto
+            .text__box
+                display: flex
+                flex-direction: column
+                align-items: center
+                .modal__subtitle
+                    z-index: 1
+                    font-size: 46.5px
+                    font-weight: bold
+                    color: #e1b838
+                .modal__descr
+                    text-align: center
+                    z-index: 1
+                    font-size: 46.5px
+                    font-weight: bold
+                    color: #e1b838

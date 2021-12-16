@@ -1,0 +1,73 @@
+header
+    padding-top: 48px
+    height: 230px
+    background-color: #262626
+    .head
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__logo
+            width: 237px
+        &__square
+            padding: 4px 32px
+            position: relative
+            padding-top: 4px
+            margin: 0
+            border: solid 2px #e1b838
+            width: 928px
+            height: 67px
+
+        .toolbar
+            display: flex
+            justify-content: space-between
+            align-content: center
+            .toolbar__item
+                line-height: 50px
+                list-style: none
+                .link__toolbar
+                    padding: 10px 0 10px 0
+                    font-size: 33.5px
+                    font-weight: normal
+                    position: relative
+                    color: #e1b838
+                    text-decoration: none
+                    &:hover
+                        color: #000
+                        font-weight: 800
+                &:hover
+                    &::before
+                        content: ''
+                        height: 67px
+                        width: 160px
+                        position: absolute
+                        top: -6px   
+                    &:nth-last-child(5)::before
+                        left: 0px
+                        top: -2px
+                        width: 190px
+                        background-color: #e1b838    
+                    &:nth-last-child(4)::before
+                        left: 207px
+                        width: 140px
+                        top: -2px
+                        background-color: #e1b838 
+                    &:nth-last-child(3)::before
+                        left: 365px
+                        width: 188px
+                        top: -2px
+                        background-color: #e1b838    
+                    &:nth-last-child(2)::before
+                        right: 207px
+                        width: 140px
+                        top: -2px
+                        background-color: #e1b838    
+                    &:nth-last-child(1)::before
+                        right: 0
+                        width: 190px
+                        top: -2px
+                        background-color: #e1b838    
+                        
+                        
+
+                    
+            

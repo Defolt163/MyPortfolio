@@ -1,0 +1,29 @@
+.return{
+    bottom: 45px;
+    position: fixed;
+    background: rgb(0, 174, 255);
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    z-index: 999999;
+}
+.return .return__btn{
+    width: 218px;
+    height: 39px;
+    border: none;
+    border-radius: 2px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.return .return__btn .return__link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2.54;
+    letter-spacing: 0.7px;
+    text-align: center;
+}

@@ -1,0 +1,199 @@
+@media (max-width: 1200px)
+    .menu
+        .menu_item
+            padding-right: 20px
+        .menu_link
+            font-size: 13px
+    .promo
+        .header
+            font-size: 50px
+    .reason
+        .reason_block
+            align-items: flex-start
+            .reason_descr
+                width: 319px
+    .app
+        .ad_block
+            .ad_bg
+                width: 290px
+            .plus
+                margin-top: 206px
+    .footer
+        .menu_footer
+            font-size: 13px
+        .sub_menu
+            font-size: 9px
+        .language
+            font-size: 9px
+
+@media (max-width: 991px)
+    .menu
+        padding-bottom: 8px
+        .menu_item
+            padding-right: 10px
+        .menu_link
+            font-size: 10px
+    .subheader
+        .logo_img
+            width: 100%
+        .logo_text
+            font-size: 11px
+        .sub_num
+            font-size: 21px
+            margin-top: 5px
+        .sub_btn
+            width: 100%
+            height: 41px
+            margin-top: 23px
+    .promo
+        h1
+            font-size: 48px
+        h2
+            font-size: 29px
+        .promo_btn
+            width: 214px
+            height: 49px
+            font-size: 14px
+            padding: 17px 39px
+            margin-top: 107px
+    .reason
+        .reason_block
+            flex-direction: column
+            align-items: center
+            .reason_descr
+                width: 319px
+                margin-top: 20px
+                text-align: center
+    .uberx
+        .uber_car
+            width: 100%
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        top: 0
+        right: -100%
+        width: 70%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        .menu_link
+            text-align: center
+        &_active
+            z-index: 2
+            right: 0
+        .menu_item
+            margin-top: 15px
+            padding-right: 0
+            border: none
+            width: 100%
+        .menu_link
+            font-size: 20px
+            display: block
+            width: 100%
+    .promo
+        &_btn
+            margin-bottom: 40px
+    .subheader
+        .logo_img
+            width: 50%
+            position: absolute
+            margin-top: 30px
+        .logo_text
+            display: none
+
+        .sub_callback
+            display: none
+        .sub_num
+            float: right
+            font-size: 15px
+            margin-top: 11px
+        .sub_btn
+            margin-top: 10px
+            float: right
+            width: 40%
+            height: 32px
+
+    .cumburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 27px
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        z-index: 3
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 3px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-last-child(1)
+                    transform: translateY(3px) rotate(-50deg)
+                &:nth-last-child(2)
+                    display: none
+                &:nth-last-child(3)
+                    transform: translateY(3px) rotate(50deg)
+    .app
+        margin-top: 38px
+        height: 2130px
+    .uberx
+        .uber_car
+            margin-top: 117px
+    .conditions
+        margin-bottom: 26px
+        .rectangle
+            margin-top: 35px
+    .footer
+        .pos_circle_block
+            display: flex
+            justify-content: center
+            .ad_circle_box
+                margin: 180px 0 0 0
+        .menu_footer
+            &_item
+                font-size: 19px;
+        .sub_menu
+            flex-wrap: wrap
+            margin-top: 5px
+            font-size: 18px
+            &_item
+                margin-top: 10px
+        .language
+            font-size: 13px;
+        .bottom_div
+            display: none
+@media (max-width: 375px)
+    .subheader
+        .sub_btn
+            font-size: 11px
+    .promo
+        .h1
+            font-size: 43px;
+        .promo_subh1
+            font-size: 33px
+        .promo_text
+            font-size: 16px
+        .promo_btn
+            margin-top: 64px
+    .reason
+        .reason_block
+            .reason_descr
+                width: 97%
+    .uberx
+        .uber_car
+            margin-top: 117px
+    .footer
+        .menu_footer
+            &_item
+                font-size: 13px

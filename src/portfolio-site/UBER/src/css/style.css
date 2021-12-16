@@ -1,0 +1,229 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 50px;
+    background-color: #212121;
+}
+
+header{
+    position: relative;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu .menu_link{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    color: #fff;
+    
+}
+
+.menu .menu_item{
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.subheader{
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0, 0, 0, .6);
+
+}
+
+.subheader .logo_img{
+    margin-top: 16px;
+}
+.subheader .logo_text{
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 100;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sub_callback{
+    margin-top: 23px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+    color: #fff;
+}
+.sub_num{
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: right;
+    color: #fff;
+    text-decoration: none;
+}
+.sub_btn{
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0px -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.promo{
+    min-height: 800px;
+    background: url(../img/bg.png) center center/cover no-repeat;
+    margin-bottom: 71px;
+}
+h1{
+    margin-top: 151px;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+}
+.promo .promo_subh1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.promo .promo_text{
+    margin-top: 23px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.reason{
+    min-height: 900px;
+}
+
+.reason .reason_block{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 40px;
+}
+
+.reason .rectangle, .app .rectangle{
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    padding: 8px 11px 6px 12px;
+    background-color: #000;
+    font-size: 11px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+}
+.reason .title, .app .title{
+    margin-top: 38px;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+}
+
+.reason .reason_circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.reason .reason_descr{
+    width: 342px;
+}
+
+.reason .reason_head{
+    font-size: 17px;
+    font-weight: normal;
+    color: #1eacc7;
+}
+.reason .reason_text{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    color: #202020;
+}
+
+.app{
+    height: 863px;
+    background: url(../img/bg_col.png) center center/cover no-repeat;
+    padding-top: 48px;
+}
+
+.app .subtitle_bl{
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center;
+    color: #222;
+}
+
+.app .ad_block{
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 19px 0;
+}
+/* .app .ad_bg{
+    position: relative;
+} */
+
+.app .ad_subtitle{
+    position: absolute;
+    margin-top: 92px;
+    width: 267px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.app .plus{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 219px;
+}
+.app .plus .ad_plus{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 18px;
+}
+.app .plus .plus_circle{
+    width: 26px;
+    height: 26px;
+    background-color: #000;
+    border-radius: 100%;
+}
+.uberx .rectangle_white{
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    padding: 8px 11px 6px 12px;
+    background-color: #fff;
+    font-size: 11px;
+    font-weight: 100;
+    text-align: center;
+    color: #070716;
+}

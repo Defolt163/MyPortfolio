@@ -40,10 +40,13 @@ var swiper = new Swiper(".mySwiper", {
     slideShadows: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next, .swipe-hint-next",
+    prevEl: ".swiper-button-prev, .swipe-hint-prev",
   },
   pagination: {
     el: ".swiper-pagination",
   },
 });
+
+/* bg */
+$('.bg__snow').snowfall({flakeCount : 100, maxSpeed : 0.3, maxSize : 5, round: true});

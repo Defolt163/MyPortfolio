@@ -1,6 +1,6 @@
 var typed = new Typed('.element', {
     // Waits 1000ms after typing "First"
-    strings: ['WEB DEV PORTFOLIO', 'HTML / CSS / SASS', 'Добро Пожаловать!'],
+    strings: ['WEB DEV PORTFOLIO', 'HTML / CSS / SASS', 'Js / JQuery / Gulp', 'WEB DEV PORTFOLIO'],
     typeSpeed: 60,
     backSpeed: 50,
     backDelay: 1300,
@@ -25,3 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
       })
   })
 })
+
+/* snow */
+$('.bg__snow').snowfall({flakeCount : 100, maxSpeed : 0.3, maxSize : 5, round: true});
