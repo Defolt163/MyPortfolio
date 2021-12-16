@@ -1,0 +1,20 @@
+    .slider__block{
+        width: 90vw;
+    }
+    .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 60vw;
+    height: auto;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    }

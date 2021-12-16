@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Defolt163/MyPortfolio.git"
+    "url": "git+https://github.com/Defolt163/uber-proj.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Defolt163/MyPortfolio/issues"
+    "url": "https://github.com/Defolt163/uber-proj/issues"
   },
-  "homepage": "https://github.com/Defolt163/MyPortfolio#readme",
+  "homepage": "https://github.com/Defolt163/uber-proj#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -26,6 +26,8 @@
   },
   "dependencies": {
     "browser-sync": "^2.27.5",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "swiper": "^7.3.2",
+    "typed.js": "^2.0.12"
   }
 }
